@@ -15,7 +15,7 @@ header{
 form{
     padding-top:80px;
     
-    height:200px;
+    
 }
 form input,form button{
     font-size:20px;
@@ -33,5 +33,47 @@ button{
 button:hover{
     background-color:orange;
     color:white;
-    border:none;
+}
+.todo-container{
+    margin-top:25px;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+
+    
+}
+.todo{
+    display:flex;
+    font-size:25px;
+    
+    padding:10px;
+    
+}
+.todo-item{
+    list-style:none;
+    width:300px;
+    
+    
+}
+.check-button ,.delete-button{
+    margin-left:10px;
+    width:30px;
+    height:30px;
+}
+.fa-trash , .fa-check{
+    pointer-events:none;
+}
+.completed{
+    text-decoration:line-through;
+}
+@media screen and (max-width: 700px){
+    body{
+        border:3px solid black;
+    }
+    .check-button ,.delete-button{
+        margin-left:5px;
+    }
+    todo-item{
+        margin-left:5px;
+    }
 }
